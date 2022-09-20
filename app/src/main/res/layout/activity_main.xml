@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/foreground"
+    >
+
+    <TextView
+        android:id="@+id/tv_result_label"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="0"
+        android:textSize="48sp"
+        android:gravity="center_vertical|right"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_label"
+        android:layout_marginTop="50dp">
+
+        <!-- Row 1 -->
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_7"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_8"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_9"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_func"
+            android:onClick="inputOperand"
+            android:text="@string/button_func_1"
+            android:textColor="@color/button_func_text"
+            android:textSize="@dimen/button_text_size" />
+        <!-- Row 2 -->
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_4"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:text="@string/button_5"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_6"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_func"
+            android:onClick="inputOperand"
+            android:text="@string/button_func_2"
+            android:textColor="@color/button_func_text"
+            android:textSize="@dimen/button_text_size" />
+        <!-- Row 3 -->
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_1"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_2"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_3"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_func"
+            android:onClick="inputOperand"
+            android:text="@string/button_func_3"
+            android:textColor="@color/button_func_text"
+            android:textSize="@dimen/button_text_size" />
+        <!-- Row 4 -->
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_ac"
+            android:onClick="clearAction"
+            android:text="@string/button_func_6"
+            android:textColor="@color/button_ac_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_digit"
+            android:onClick="inputNumber"
+            android:text="@string/button_0"
+            android:textColor="@color/button_digit_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_func"
+            android:onClick="resultAction"
+            android:text="@string/button_func_5"
+            android:textColor="@color/button_func_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_func"
+            android:onClick="inputOperand"
+            android:text="@string/button_func_4"
+            android:textColor="@color/button_func_text"
+            android:textSize="@dimen/button_text_size" />
+
+        
+
+
+
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
